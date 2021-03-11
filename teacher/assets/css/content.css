@@ -1,0 +1,573 @@
+
+.panel{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: -1px;
+    margin-bottom: 27px;
+    background-color:#9c8608;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 20px rgb(26, 24, 24);
+    display: block;
+    transition: all  300ms linear 1s;
+    }
+    a{
+      text-decoration: none;
+      color: greenyellow;
+    }
+    #back i{
+      padding: 5px 5px 5px 10px;
+      display: block;
+      color: rgb(95, 34, 95);
+      cursor: pointer;
+      
+    }
+    .panel .addbtn{
+      color: whitesmoke;
+      /* display: block; */
+      background-color: rgb(67, 122, 67);
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 20px black;
+      margin: 5px;
+      cursor: pointer;
+  
+    }
+    /* #filter{
+      height: 35px;
+      padding: 2px 10px;
+      align-self: center;
+      border-radius: 5px;
+      background-color: rgb(70, 82, 39);
+      color: thistle;
+      margin: 3px 5px 2px 0px;
+    } */
+  .panel h3{
+      color:white;
+      text-transform: capitalize;
+      margin-left: -18px;
+    }
+  .panel-row{
+    /* border: 2px solid red; */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    padding:0px 3px;
+    /* color: whitesmoke; */
+    background-color: #bdc3c7;
+    margin-bottom: 10px;
+  
+  }
+  .panel-head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:5px 3px 3px 3px;
+    border: 1px solid darkslateblue;
+   box-shadow:4px 1px 10px rgb(90, 83, 83);
+   background-color: darkslategrey;
+   border-radius: 5px;
+   padding: 0px 5px;
+  }
+  .panel-body{
+    /* border: 1px solid black; */
+    margin: 3px 2px;
+    /* box-shadow: 1px 1px 5px black; */
+    border-radius: 5px;
+    /* background-color:#bdc3c7 ; */
+    padding: 2px 7px;
+  }
+  
+  .smBtn{
+    color: rgb(214, 220, 231);
+    background-color: rgb(136, 28, 136);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 6px;
+    margin: 5px 3px;
+    border: 1px solid lightgreen;
+    display: inline-block;
+  }
+  .smBtn-d{
+    color: rgb(214, 220, 231);
+    background-color: rgb(235, 40, 14);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 6px;
+    margin:5px 3px;
+    border: 1px solid lightgreen;
+    display:inline-block;
+  }
+  .smBtn-s{
+    color: rgb(42, 101, 211);
+    background-color: rgb(14, 235, 33);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 6px;
+    margin:5px 3px;
+    border: 1px solid lightgreen;
+    display:inline-block;
+  }
+  .line{
+    display: flex;
+  }
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    /* border-radius: 20px; */
+  }
+  table a{
+    color: rgb(20, 34, 53);
+  }
+  table a:hover{
+    color: rgb(209, 98, 47);
+  }
+  th {
+    text-align: left;
+    padding: 15px 10px;
+    text-transform: capitalize;
+    color:whitesmoke;
+  }
+  td {
+    text-align: left;
+    padding: 5px 10px;
+  } 
+  tbody tr:nth-child(odd){
+    /* color: #9c8608; */
+    background-color: #999090;
+    /* background-color: rgb(26, 24, 24); */
+  }
+  thead tr:nth-child(1){
+    /* background-color: #999090; */
+    background-color: rgb(26, 24, 24);
+  }
+  /* model cssss */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    
+  }
+  .modal-content{
+    background-color: #fefefe;
+    margin: 2% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%; /* Could be more or less, depending on screen size */
+    transition: all 0.8s ease-out;
+    border: 1px solid rgba(0,0,0,0.8);
+    overflow-y: auto;
+  }
+  .close {
+    color: rgb(10, 10, 10);
+    /* float: right; */
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover{
+    color: rgb(218, 31, 31);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-head{
+    /* border: 1px solid black; */
+    background-color: rgb(84, 230, 84);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 10px black;
+    border-radius: 5px;
+    padding: 0px 10px;
+    height: 9%;
+  }
+  .modal-body{
+    /* border: 1px solid black; */
+    background-color: rgb(216, 231, 216);
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    height: 72%;
+    overflow-y: auto;
+  }
+
+  /* model css end */
+  /* search bar start*/
+  .search_bar{
+    display: flex;
+  }
+  .search_bar i{
+    color: sandybrown;
+    position: relative;
+    left: 30px;
+    top: 10px;
+  }
+  .search_bar input{
+    outline: none;
+    background-color: rgb(95, 150, 119);
+    border:none;
+    padding: 10px 4px 10px 35px;
+    border-radius:10px;
+    color: white
+    ;
+  }
+  .search_bar input::placeholder{
+    color: rgb(231, 226, 225);
+    padding-left: 5px;
+  
+  }
+  /* search bar end here  */
+
+  /* courses and facualty start*/
+  #courses{
+    transition: all 0.5s linear;
+  }
+  #faculty{
+    transition: all 0.8s linear;
+  }
+  .faculty_btn{
+    color: rgb(28 25 232);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  .faculty_btn:hover{
+    color: rgb(17, 2, 2);
+    
+  }
+
+  /* courses and faculty end */
+  /* pagenition start */
+    .pagenition{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 5px;
+    }
+    .pagenition .pgnbtn{
+      padding: 3px 10px;
+      margin: 2px 5px;
+      background-color: rgb(14, 17, 170);
+      border-radius: 5px;
+      color: white;
+      box-shadow: 1px 1px 5px black;
+      width: 10px;
+      height: 17px;
+      cursor: pointer;
+    }
+    .pagenition .pgnbtn:hover,
+    .pagenition .active{
+      background-color: rgb(22, 126, 22);
+      color: cornsilk;
+    }
+  /* pageninatio end */
+
+  /*  register form start */
+.cont_nr{
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    /* border: 1px solid black; */
+    /* overflow-y:auto; */
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 5px;
+}
+.col-3{
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 5px 10px;
+  /* border: 1px solid red; */
+  width: 30%;
+}
+ .col-5{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 5px 10px;
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 5px 5px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.row input,select{
+    width: 100%;
+    padding: 10px 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 5px;
+
+}
+.row input[type="button"],input[type="submit"]{
+    width: 100%;
+    padding: 10px 6px;
+    border: 1px solid rgb(84, 163, 19);
+    border-radius: 4px;
+    margin-top: 22px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+
+}
+
+.row input:focus,
+.row select:focus{
+    outline-color: greenyellow;
+}
+.form_check{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 5px; 
+}
+.form_radio{
+  margin: 7px 10px;
+  padding: 2px;
+}
+.form_radio input[type="radio"],input[type="checkbox"]{
+  margin-left: 20px;
+}
+.form_radio label{
+  position: relative;
+  top: -2px;
+  left: 5px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* buttons css start */
+.btn_warning{
+  background-color: rgb(211, 248, 47);
+}
+.btn_warning:hover{
+  background-color: rgb(231, 245, 155);
+  transition: all 0.5s linear;
+}
+.btn_success{
+  background-color: rgb(95, 199, 54);
+}
+.btn_success:hover{
+  background-color: rgb(180, 206, 169);
+  transition: all 0.5s linear;
+}
+.btn_danger{
+  background-color: red;
+}
+.btn_danger:hover{
+  background-color: rgb(218, 139, 139);
+  transition: all 0.5s linear;
+}
+/* buttons css end */
+/*text color*/
+.tx-warning{
+  color: yellow;
+}
+.tx-success{
+  color: rgb(40, 160, 10);
+}
+.tx-danger{
+  color: rgb(199, 21, 21);
+}
+.tx-primary{
+  color: rgb(19, 30, 196);
+}
+/* css for the settings page */
+.prof{
+     border: 1px solid red;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.description{
+  /* border: 1px solid red; */
+  padding: 5px;
+  width: 100%;
+  height: 53vh;
+  margin-bottom: 30px; 
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  color: #9c8608;
+}
+.bl{
+  color: #19bc04;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: 1px solid rgb(112, 76, 76);
+  width: 100%;
+  padding: 5px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  letter-spacing: 4px;
+  
+}
+.mn{
+  color: #0e1b28;
+  text-transform: capitalize;
+  margin-left: 20px;
+  overflow-wrap: break-word;
+  width: 100px;
+}
+#cpass_btn{
+  display: none;
+}
+.cpass{
+  color: #f51616;
+  background: rgb(0 0 0);
+  /* box-shadow: 10px 1px 20px rgb(66, 48, 48); */
+  padding: 5px;
+  margin-left: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cpass:hover{
+  color: #fff;
+}
+#cpass_btn:checked + label{
+  color: #fff;
+  background: green;
+}
+#cpass_btn:checked ~ .cpass_box{
+  display: block;
+}
+.cpass_box{
+  display: none;
+  position: relative;
+  left: -25px;
+  top: 8px;
+}
+.status{
+  position: relative;
+  left: 21px;
+  font-size: 20px;
+  color: rgb(172, 45, 45);
+  /* border: 1px solid red; */
+}
+.status1{
+  position: relative;
+  left: -76px;
+  display: block;
+  width: 150%;
+  font-size: 20px;
+  color: rgb(172, 45, 45);
+  /* border: 1px solid red; */
+}
+.success{
+  display: block;
+  margin-left: 20px;
+  margin-bottom: -31px;
+  font-size: 25px;
+  color: rgb(48 249 115);
+}
+/* result error */
+.er{
+  display: block;
+  /* z-index: 1000; */
+  position: relative;
+  top: 40px;
+  left: -80px;
+  padding-left: 5px;
+  color: rgb(201, 62, 62);
+}
+.exer{
+  width: 150%;
+  display: block;
+  position: relative;
+  top: 40px;
+  left: -80px;
+  padding-left: 5px;
+  color: rgb(201, 62, 62); 
+}
+/* koko ended */
+/* for notice board error massege */
+.notice_msg{
+  padding: 4px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 26px;
+}
+.fac_link{
+  cursor: pointer;
+  color: brown;
+}
+.fac_link:hover{
+  color: coral;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-5,.col{
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .cont_nr{
+    padding-right: 37px;
+  }
+  .row input[type="button"]{
+    margin-top: -3px;
+  }
+  
+  
+}
+  /*  register form end */
+  /*massege color start*/
+  .danger{
+    color: red;
+    margin: 2px 5px;
+  }
+  .success{
+    color: rgb(10, 107, 39);
+    margin: 2px 5px;
+  }
+  .warning{
+    color: rgb(110, 95, 8);
+    margin: 2px 5px;
+  }
+  /*massege color end*/
+
+  /* css for result page */
+  .result_input{
+    width: 43px !important;
+    outline: none !important;
+    border: none !important;
+    background: #282829;
+    color: white !important;
+    padding-left: 20px !important;
+    margin-top: -1px !important;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.result_error{
+  color: #b31818;
+  margin-left: 5px;
+}
+#marks_tbl{
+  width: 100% !important;
+}
